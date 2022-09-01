@@ -25,7 +25,7 @@ The information that is presented at the command prompt can be customized by the
 
 
 
-Here is a breakdown of the composition of the command prompt:
+Here is a breakdown of the composition of the ***command prompt***:
 
 ***mark***: The username of the current user
 
@@ -78,12 +78,21 @@ These commands all tend to have the following structure:
 ```
 
 Some simple commands like `clear` or `date` do not require any options or arguments.
+
+<br />
+
 **Options** are usually preceded by a hyphen (`-`) and they tweak the behavior
-of the command. **Arguments** can be names of files, raw data, or other options
-that the command requires. A simple command that has an argument is `echo`.
+of the command. <br />
+
+
+**Arguments** can be names of files, raw data, or other options
+that the command requires. <br />
+
+
+A simple command that has an argument is `echo`.
 The `echo` command prints a phrase to the console. Enter `echo 'Hello World!'`
 into the command line to see what happens:
-
+<br />
 
 ```bash
 echo 'Hello World!'
