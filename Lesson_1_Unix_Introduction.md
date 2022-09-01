@@ -68,7 +68,7 @@ as simple as `clear` or `date`. This last allow to retrive the current date in t
 
 
 <p align="center">
-<img src="/media/lesson_1/10.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/10.png" alt="drawing"/>
 </p>
 
 These commands all tend to have the following structure:
@@ -136,7 +136,7 @@ It is important to note that almost ***everything in Linux is case-sensitive***,
 When you first login, your current working directory is your home directory. Your home directory has the same name as your user-name, in my case, **jgl**, and it is where your personal files and subdirectories are saved.
 
 <p align="center">
-<img src="/media/lesson_1/1.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/1.png" alt="drawing" "/>
 </p>
 
 To find out what is in your home directory, type
@@ -144,10 +144,10 @@ To find out what is in your home directory, type
 `$ ls (short for list)`
 
 <p align="center">
-<img src="/media/lesson_1/2.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/2.png" alt="drawing" "/>
 </p>
 
-The ls command lists the contents of your current working directory, but only the names of files and directories. 
+The `ls command lists the contents of your current working directory, but only the names of files and directories. 
 
 To get a more detailed information about the files and directories, type
 
@@ -156,7 +156,7 @@ To get a more detailed information about the files and directories, type
 
 
 <p align="center">
-<img src="/media/lesson_1/3.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/3.png" alt="drawing" "/>
 </p>
 
 We can observe now a lot of information distributed by columns for all the files and directories:
@@ -170,7 +170,7 @@ columns | Information	  |
 6, 7 and 8| Last modification time |
 
 
-`ls` is an example of a command which can take options: \-l is an example of an option. The options change the behaviour of the command. There are online manual pages that tell you which options a particular command can take **man**, and how each option modifies the behaviour of the command for that type
+`ls` is an example of a command which can take options: `-l` is an example of an option. The options change the behaviour of the command. There is a system manual that tell you which options a particular command can take, and how each option modifies the behaviour of the command, for that we can use the command *man*:
 
 `$ man ls`
 
@@ -178,52 +178,56 @@ columns | Information	  |
 
 
 
-Try now to use \-h to display unit suffixes in column 5 for file sizes: Byte, Kilobyte, Megabyte...
+Try now to use `-h` to display unit suffixes in column 5 for file sizes: Byte, Kilobyte, Megabyte...
 
 <p align="center">
-<img src="/media/lesson_1/4.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/4.png" alt="drawing" />
 </p>
 
 
-`ls` does not, in fact, cause all the files/directories in your home directory to be listed, but only those ones whose name does not begin with a dot (**.**) Files beginning with a dot (**.**) are known as hidden files and usually contain important program configuration information. They are hidden because you should not change them unless you are very familiar with UNIX!!!
+`ls` does not, in fact, print all the files/directories in your home directory to be listed, but only those ones whose name does not begin with a dot (**.**) Files beginning with a dot (**.**) are known as hidden files and usually contain important program configuration information. They are hidden because you should not change them unless you are very familiar with UNIX!!!
 
-To list all files and directories in your home directory including those whose names begin with a dot, type
+To list all files and directories in your home directory including those whose names begin with a dot, type:
 
 `$ ls -la`
 
 <p align="center">
-<img src="/media/lesson_1/5.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/5.png" alt="drawing" />
 </p>
 
+<br />
 
 ### Linux directory structure
 
 Linux is based on UNIX and hence it borrows its filesystem hierarchy from UNIX. You’ll fine a similar directory structure in UNIX-like operating systems such as Ubuntu and macOS. I’ll be using the term Linux hereafter instead of UNIX though.
 
 ### / – The root directory
-Everything, all the files and directories, in Linux are located under ‘root’ represented by ‘/’. If you look at the directory structure, you’ll realize that it is similar to a plant’s root.
+Everything, all the files and directories, in Linux are located under `root` represented by `/`. If you look at the directory structure, you’ll realize that it is similar to a plant’s root.
 
 
 <p align="center">
-<img src="/media/lesson_1/UnixDirectoryTree.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/UnixDirectoryTree.png" alt="drawing" />
 </p>
 
 Since all other directories or files are descended from root, the absolute path of any file is traversed through root. For example, if you have a file in /home/jelkner/pubic_html, you can guess that the directory structure goes from root->home->jelkner->public-html->index.html.
 
- 
+ <br />
 
 1.3 Making Directories
 ----------------------
 
 ### mkdir (make directory)
 
-We will now make a subdirectory in your home directory to hold the files you will be creating and using in the course of this tutorial. To make a subdirectory called unixstuff in your current working directory type
+We will now make a subdirectory in your home directory to hold the files you will be creating and using in the course of this tutorial. To make a subdirectory called unixstuff in your current working directory type:
 
 `$ mkdir bioinformatic_course`
 
-To see the directory you have just created, type
+To see the directory you have just created, type:
 
 `$ ls`
+
+ <br />
+
 
 1.4 Changing to a different directory 
 --------------------------------------
@@ -232,15 +236,22 @@ To see the directory you have just created, type
 
 The command cd directory means change the current working directory to 'directory'. The current working directory may be thought of as the directory you are in, i.e. your current position in the file-system tree.
 
-To change to the directory you have just made, type
+To change to the directory you have just made, type:
 
 `$ cd bioinformatic_course`
 
 Type `ls` to see the contents (which should be empty)
 
-### Exercise 1a
+ <br />
+
+
+### Exercises
 
 Make another directory inside the **bioinformatic_course** directory called **backups**
+
+
+ <br />
+
 
 1.5 The directories . and ..
 ----------------------------
@@ -250,7 +261,7 @@ Still in the **bioinformatic_course/** directory, type
 `$ ls -la`
 
 <p align="center">
-<img src="/media/lesson_1/6.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/6.png" alt="drawing" />
 </p>
 
 
@@ -260,7 +271,7 @@ In UNIX, (**.**) means the current directory, so typing
 
 `$ cd .`
 
-NOTE: there is a space between cd and the dot
+*NOTE*: there is a space between cd and the dot
 
 means stay where you are (the **bioinformatic_course/** directory).
 
@@ -270,9 +281,13 @@ This may not seem very useful at first, but using (**.**) as the name of the cur
 
 `$ cd ..`
 
-will take you one directory up the hierarchy (back to your home directory). Try it now.
+will take you one directory up the hierarchy (back to your home directory). *Try it now*.
 
-*Note:* typing cd with no argument always returns you to your home directory. This is very useful if you are lost in the file system.
+*Note:* typing `cd` with no argument always returns you to your home directory. This is very useful if you are lost in the file system.
+
+
+ <br />
+
 
 1.6 Pathnames
 -------------
@@ -289,7 +304,7 @@ The full pathname will look something like this -
 **/Users/jgl**
 
 <p align="center">
-<img src="/media/lesson_1/7.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/7.png" alt="drawing" />
 </p>
 
 
@@ -299,35 +314,36 @@ which means that **jgl** (your home directory) is in the directory **Users** (th
 ### absolute and relative paths
 
 
-The Absolute path always starts from the root directory (/). For example, 
+The *Absolute path* always starts from the root directory (/). For example, 
 
 > `/Users/jgl/bioinformatic_course/backups`
 
 
-A relative path starts from the current directory. For example, if you are in the **/User** irectory and you want to access the my_scripts.sh file stored in backups, you can use jgl/bioinformatic_course/backups/my_scripts.sh.
+A *relative path* starts from the current directory. For example, if you are in the **/User** directory and you want to access the my_scripts.sh file stored in backups, you can use jgl/bioinformatic_course/backups/my_scripts.sh.
+
 
 ### Understanding the difference between absolute and relative paths
 
 You know that the directory structure in Linux resembles the root of a tree. Everything starts at root and branches out from there.
 
-Now imagine that you are in the directory abhishek and you want to access the my_scripts.sh file.
+Now imagine that you are in the directory `abhishek/` and you want to access `my_scripts.sh` file.
 
-The absolute path is depicted in the green dotted line and the relative path is depicted in the yellow dotted lines
+The *absolute path* is depicted in the green dotted line and the relative path is depicted in the yellow dotted lines
 
 
 <p align="center">
-<img src="/media/lesson_1/8.png" alt="drawing" width="600"/>
+<img src="/media/lesson_1/8.png" alt="drawing" />
 </p>
 
 
 
-Suppose you want to see the properties of the file my_script.sh using the ls command.
+Suppose you want to see the properties of the file my_script.sh using the `ls` command.
 
-You may use the absolute path that starts with the root directory (/):
+You may use the *absolute path* that starts with the root directory (/):
 
 `ls -l /home/abhishek/scripts/my_script.sh`
 
-Or, you can use the relative path (which starts from the current directory, not /):
+Or, you can use the *relative path* (which starts from the current directory, not /):
 
 `ls -l scripts/my_script.sh`
 
@@ -336,16 +352,18 @@ Both commands will yield the same result (except for the path of the file).
 
 
 
-### Exercise 1b
+### Exercise
 
 Use the commands **ls**, **pwd** and **cd** to explore the file system.
 
 (Remember, if you get lost, type cd by itself to return to your home-directory)
 
-Create another directory in bioinformatic_course named scripts, and inside of scripts create again a new directory named python. Now retrieve the relative path of backups folder from your current directory (python/). Retrieve also the absolute path of Python/ directory
+Create another directory in bioinformatic_course named `scripts`, and inside of `scripts` create again a new directory named `python`. Now retrieve the relative path of `backups/` folder from your current directory `python/`. Retrieve also the absolute path of `Python/` directory
 
-Try to use the command ***tree***. go to your home directory and type `tree bioinformatic_course`
+Try to use the command ***tree***: go to your home directory and type `tree Course`
+(if tree does not work, you will have to install it. type `sudo apt-get install tree`)
 
+<br />
 
 1.7 More about home directories and pathnames
 ---------------------------------------------
@@ -366,7 +384,7 @@ You will get a message like this -
 
 > backups: No such file or directory
 
-The reason is, **backups** is not in your working directory (the directory you are currently in). To use a command on a file (or directory) not in the working directory, you must either cd to the correct directory, or specify its full pathname. To list the contents of your backups directory, you must type
+The reason is, **backups** is not in your working directory (the directory you are currently in). To use a command on a file (or directory) not in the working directory, you must either cd to the correct directory, or specify its `full pathname`. To list the contents of your backups directory, you must type
 
 `$ ls bioinformatic_course/backups`
 
@@ -379,19 +397,9 @@ Home directories can also be referred to by the tilde **~** character. It can be
 
 will list the contents of your **bioinformatic_course** directory, no matter where you currently are in the file system.
 
-What do you think
+What do you think `$ ls ~` would list?
 
-    $ ls ~
-
-would list?
-
-What do you think
-
-    $ ls ~/..
-
-would list?
-
-
+What do you think `$ ls ~/.` would list?
 
 
 
