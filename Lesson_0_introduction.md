@@ -17,12 +17,13 @@ Linux Mint 20 64-bit (with Xfce interface).
 
 <br />
 
+
+Linus Torvalds was a Helsinki university student who liked playing around with software and computers (but it seems, [he has some trouble to understand people’s emotions and respond appropriately](https://www.newyorker.com/science/elements/after-years-of-abusive-e-mails-the-creator-of-linux-steps-aside).In 1991 he announced the creation of a new core operating system that he had named Linux. Linux powers 94% of the world’s supercomputers, most of the servers powering the Internet, and a billion+ Android devices. 97% of managers reported that they will prioritize hiring employees competent in Linux relative to other skills areas. Linux is particularly suitable for businesses with small IT budgets (like scientific laboratories!!!!). Linux is free to use and install, and is extremely stable and reliable (no blue screen of death!).
+
 <p align="center">
 <img src="0.1.png" alt="drawing" width="400"/>
 </p>
 
-
-Linus Torvalds was a Helsinki university student who liked playing around with software and computers (but it seems, [he has some trouble to understand people’s emotions and respond appropriately](https://www.newyorker.com/science/elements/after-years-of-abusive-e-mails-the-creator-of-linux-steps-aside).In 1991 he announced the creation of a new core operating system that he had named Linux. Linux powers 94% of the world’s supercomputers, most of the servers powering the Internet, and a billion+ Android devices. 97% of managers reported that they will prioritize hiring employees competent in Linux relative to other skills areas. Linux is particularly suitable for businesses with small IT budgets (like scientific laboratories!!!!). Linux is free to use and install, and is extremely stable and reliable (no blue screen of death!).
 
 <br />
 
