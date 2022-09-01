@@ -4,8 +4,8 @@ Github of Introduction to Bioinformatic for Biologist Course of Computational Bi
 
 ## WHAT YOU NEED TO DO BEFORE THE FIRST DAY
 
-Windows VMWare Player:  https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0 
-Mac VirtualBox: https://www.virtualbox.org/  
+Windows VMWare Player:  https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0 <br />
+Mac VirtualBox: https://www.virtualbox.org/  <br/>
 
 You should download and unzip the Virtual Machine we have created for this course: 
 https://drive.google.com/drive/u/0/folders/1La8Tr3OjuusEJZU270O3rWTJPjUW_iH7
