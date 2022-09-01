@@ -9,7 +9,7 @@ Github of Introduction to Bioinformatic for Biologist Course of Computational Bi
 
 <br />
 
-## WHAT YOU NEED TO DO BEFORE THE FIRST DAY
+### WHAT YOU NEED TO DO BEFORE THE FIRST DAY
 
 Windows VMWare Player: [VMWare](https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0) <br />
 Mac VirtualBox: [VirtualBox](https://www.virtualbox.org/)  <br/>
@@ -25,7 +25,7 @@ Once the virtual machine starts, your default password is 'osboxes.org'
 
 <br />
 
-## UPM Students - INSTRUCTIONS
+### UPM Students - INSTRUCTIONS
 
 Dear Students, 
 
