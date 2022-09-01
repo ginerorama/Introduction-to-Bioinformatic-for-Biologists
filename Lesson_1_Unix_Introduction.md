@@ -9,6 +9,8 @@ UNIX Introduction 1
 
 The Linux terminal is a text-based interface used to control a Linux computer. It's just one of the many tools provided to Linux users for accomplishing any given task, but it's widely considered the most efficient method available.
 
+<br />
+
 ### the shell
 
 In a Linux system, the shell is a command-line interface that interprets a user’s commands and script files, and tells the operating system what to do with them. There are several shells that are widely used, such as the Bourne-Again shell `(bash)` and Z shell `(zsh)`. Each shell has its own feature set and intricacies regarding how commands are interpreted, but they all feature input and output redirection, variables, and condition-testing, among other things.
@@ -35,6 +37,7 @@ Here is a breakdown of the composition of the ***command prompt***:
 
 ***$***: The prompt symbol. This denotes the end of the command prompt, after which the user’s keyboard input will appear $
 
+<br />
 
 ### Running Commands 
 
@@ -101,7 +104,7 @@ echo 'Hello World!'
 ```
 ## Hello World!
 ```
-
+<br />
 
 You can use `echo` to print any phrase surrounded by single
 quotes (`''`) to the console.
@@ -112,6 +115,7 @@ entered. If you want to re-execute a past command, you can scroll to that
 command then press `Enter`. Try getting back to the `echo 'Hello World!'`
 command and execute it again.
 
+<br />
 
 ### Process and case-sensitive
 
@@ -119,14 +123,14 @@ An instance of a running command is known as a **process**. When a command is ex
 
 It is important to note that almost ***everything in Linux is case-sensitive***, including file and directory names, commands, arguments, and options. If something is not working as expected, double-check the spelling and case of your commands!
 
-
+<br />
 
 ### Exercises
 
 1. Print your name to the terminal.
 2. Clear your terminal after completing #1.
 
-
+<br />
 
 1.2 Listing files and directories
 ---------------------------------
@@ -154,12 +158,15 @@ To get a more detailed information about the files and directories, type
 
 `$ ls -l (long format)`
 
+<br />
 
 <p align="center">
 <img src="/media/lesson_1/3.png" alt="drawing" "/>
 </p>
 
 We can observe now a lot of information distributed by columns for all the files and directories:
+
+<br />
 
 columns | Information	  |
 ------- | ---------------|
@@ -169,6 +176,7 @@ columns | Information	  |
 5       | Size (bytes)-meaningful for files, but not for directories.|  
 6, 7 and 8| Last modification time |
 
+<br />
 
 `ls` is an example of a command which can take options: `-l` is an example of an option. The options change the behaviour of the command. There is a system manual that tell you which options a particular command can take, and how each option modifies the behaviour of the command, for that we can use the command *man*:
 
@@ -176,7 +184,7 @@ columns | Information	  |
 
 
 
-
+<br />
 
 Try now to use `-h` to display unit suffixes in column 5 for file sizes: Byte, Kilobyte, Megabyte...
 
@@ -310,6 +318,7 @@ The full pathname will look something like this -
 
 which means that **jgl** (your home directory) is in the directory **Users** (the group directory),which is located on the **root** "/".
 
+<br />
 
 ### absolute and relative paths
 
@@ -321,6 +330,7 @@ The *Absolute path* always starts from the root directory (/). For example,
 
 A *relative path* starts from the current directory. For example, if you are in the **/User** directory and you want to access the my_scripts.sh file stored in backups, you can use jgl/bioinformatic_course/backups/my_scripts.sh.
 
+<br />
 
 ### Understanding the difference between absolute and relative paths
 
@@ -349,7 +359,7 @@ Or, you can use the *relative path* (which starts from the current directory, no
 
 Both commands will yield the same result (except for the path of the file).
 
-
+<br />
 
 
 ### Exercise
@@ -388,6 +398,7 @@ The reason is, **backups** is not in your working directory (the directory you a
 
 `$ ls bioinformatic_course/backups`
 
+<br/>
 
 ### ~ (your home directory)
 
@@ -401,7 +412,7 @@ What do you think `$ ls ~` would list?
 
 What do you think `$ ls ~/.` would list?
 
-
+<br/>
 
 ### SUMMARY
 
