@@ -2,7 +2,7 @@
 Github of Introduction to Bioinformatic for Biologist Course of Computational Biology Master (UPM)
 
 
-# WHAT YOU NEED TO DO BEFORE THE FIRST DAY
+## WHAT YOU NEED TO DO BEFORE THE FIRST DAY
 
 Windows VMWare Player:  https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0 
 Mac VirtualBox: https://www.virtualbox.org/  
@@ -16,7 +16,7 @@ https://drive.google.com/drive/u/0/folders/1La8Tr3OjuusEJZU270O3rWTJPjUW_iH7
 
 Once the virtual machine starts, your default password is 'osboxes.org'
 
-### Long and detailed explanation to install de Virtual Machine: [link](https://docs.google.com/document/d/1yn_GVrnketlOyb3iHea83tDzqbiYP9pD_3BtPW0o7Is/edit?usp=sharing)
+Long and detailed explanation to install de Virtual Machine: [link](https://docs.google.com/document/d/1yn_GVrnketlOyb3iHea83tDzqbiYP9pD_3BtPW0o7Is/edit?usp=sharing)
 
 
 ## UPM Students - INSTRUCTIONS
