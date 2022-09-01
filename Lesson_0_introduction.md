@@ -33,7 +33,7 @@ Unlike Windows, there are many different interfaces ("shells"), distributions, a
 
 
 <p align="center">
-<img src="0.2.png" alt="drawing" width="400"/>
+<img src="media/lesson_0/0.2.png" alt="drawing" width="400"/>
 </p>
 
 
@@ -43,7 +43,7 @@ Mint 20 Xfce is a very rich desktop interface. It works like Mac/Windows - drag/
 
 ### The very beggining in Linux
 
-<img src="0.3.png" alt="drawing" width="200"/>
+<img src="media/lesson_0/0.3.png" alt="drawing" width="200"/>
 
 
 
