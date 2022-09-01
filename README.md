@@ -16,8 +16,7 @@ https://drive.google.com/drive/u/0/folders/1La8Tr3OjuusEJZU270O3rWTJPjUW_iH7
 
 Once the virtual machine starts, your default password is 'osboxes.org'
 
-Long and detailed explanation to install de Virtual Machine: [link](https://docs.google.com/document/d/1yn_GVrnketlOyb3iHea83tDzqbiYP9pD_3BtPW0o7Is/edit?usp=sharing)
-
+<br />
 
 ## UPM Students - INSTRUCTIONS
 
@@ -31,4 +30,6 @@ You will take this course using a VMWare Virtual Machine.  You should do the fol
 https://drive.google.com/drive/u/0/folders/1La8Tr3OjuusEJZU270O3rWTJPjUW_iH7 
 3. Unzip the virtual machine
 4. Start VMWare Player and select the virtual machine - start it (PASSWORD IS osboxes.org)
+
+Long and detailed explanation to install de Virtual Machine: [link](https://docs.google.com/document/d/1yn_GVrnketlOyb3iHea83tDzqbiYP9pD_3BtPW0o7Is/edit?usp=sharing)
 
