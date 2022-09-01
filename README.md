@@ -1,3 +1,9 @@
+
+<img src="/media/logo.png" alt="drawing" width="200"/>
+
+
+<br />
+
 # Introduction to Bioinformatic for Biologists
 Github of Introduction to Bioinformatic for Biologist Course of Computational Biology Master (UPM)
 
