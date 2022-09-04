@@ -154,7 +154,7 @@ Be aware that there is one difference between copying files and folders, when co
 ```
 cd ~
 cp -r bioinformatic_course  ~/Desktop/bioinformatic_course
-cd ~/Documents/bioinformatic_course
+cd ~/Desktop/bioinformatic_course
 ls
 ```
 
@@ -328,9 +328,7 @@ If you only want to get the number of lines
 
 	$ wc -l science.txt
 
-To find out how many lines the file has, type
-
-    $ wc -l science.txt
+<br />
     
     
  2.7 Wildcards
@@ -380,6 +378,7 @@ command | function|
 `mv file1 file2`| move or rename file1 to file2|
 `rm file`| remove a file|
 `rmdir directory` | remove a directory|
+`rm -r directory`| remove recursively|
 `cat file`| display a file|
 `more file`| display a file a page at a time|
 `head file`| display the first few lines of a file|
