@@ -43,7 +43,7 @@ Mint 20 Xfce is a very rich desktop interface. It works like Mac/Windows - drag/
 
 
 <p align="center">
-<img src="media/lesson_0/0.4.png" alt="drawing" width="400"/>
+<img src="media/lesson_0/4.4.png" alt="drawing" width="400"/>
 </p>
 
 
