@@ -410,7 +410,6 @@ will list the contents of your **bioinformatic_course** directory, no matter whe
 
 What do you think `$ ls ~` would list?
 
-What do you think `$ ls ~/.` would list?
 
 <br/>
 
