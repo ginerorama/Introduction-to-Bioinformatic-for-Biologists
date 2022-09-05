@@ -71,11 +71,21 @@ Linus Torvalds was a Helsinki university student who liked playing around with s
 
 One of the main applications you will need to know for the first few days is the `Terminal`. The icon to start the Terminal is in the icon bar (bottom left of your screen) - a black box icon. Open that now. You will notice that the terminal window is slightly transparent - I like it that way, but you can change this if you don't.
 
+
+
+<p align="center">
+<img src="media/lesson_0/0.5.png" alt="drawing" width="800"/>
+</p>
+
+
+
+
 The "command prompt" is the "stuff" before the flashing white box. By default, Mint 20 tells you:
 
-Your username
-Your current "location" in the filesystem
-The command prompt ('$')
+1. Your username
+2. Computer name
+3. Your current "location" in the filesystem
+4. The command prompt ('$')
 
 `e.g. osboxes@osboxes ~ $`
 
@@ -83,7 +93,7 @@ Type: "cd Course" ("cd" = "Change directory") and press Enter. Your command prom
 
 `osboxes@osboxes ~/Course $`
 
-Autocomplete is a common feature in most Linux distributions, and is activated by pressing the 'Tab' key. Autocomplete is "smart" in that it will select either an app (in the context where you need an app) or a file-name (in the context where you need a filename). Try this:
+***Autocomplete*** is a common feature in most Linux distributions, and is activated by pressing the 'Tab' key. Autocomplete is "smart" in that it will select either an app (in the context where you need an app) or a file-name (in the context where you need a filename). Try this:
 
 `osboxes@osboxes ~/Course $ fire`                 (now press Tab)
 
