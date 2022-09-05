@@ -13,7 +13,7 @@ The Linux terminal is a text-based interface used to control a Linux computer. I
 
 ### the shell
 
-In a Linux system, the shell is a command-line interface that interprets a user’s commands and script files, and tells the operating system what to do with them. There are several shells that are widely used, such as the Bourne-Again shell `(bash)` and Z shell `(zsh)`. Each shell has its own feature set and intricacies regarding how commands are interpreted, but they all feature input and output redirection, variables, and condition-testing, among other things.
+In a Linux system, ***the shell is a command-line interface that interprets a user’s commands and script files, and tells the operating system what to do with them***. There are several shells that are widely used, such as the Bourne-Again shell `(bash)` and Z shell `(zsh)`. Each shell has its own feature set and intricacies regarding how commands are interpreted, but they all feature input and output redirection, variables, and condition-testing, among other things.
 
 
 When you first login to a server, you will typically be greeted by the Message of the Day (MOTD), which is typically an informational message that includes miscellaneous information such as the version of the Linux distribution that the server is running. After the MOTD, you will be dropped into the command prompt, or shell prompt, which is where you can issue commands to the server.
