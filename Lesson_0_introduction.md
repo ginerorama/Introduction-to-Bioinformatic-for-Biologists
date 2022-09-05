@@ -30,6 +30,7 @@ Linus Torvalds was a Helsinki university student who liked playing around with s
 </p>
 
 
+[Linus Torvalds easter egg](https://www.pcmag.com/news/linuxs-linus-torvalds-sorry-for-being-a-jerk)
 <br />
 
 ### Linux Mint 20.0
