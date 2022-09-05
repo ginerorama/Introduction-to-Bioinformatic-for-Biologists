@@ -3,6 +3,8 @@ Me: Joaquín Giner
 
 Location: CBGP CsBGP Laboratory 
 
+This tutorial and the VM was created by *Mark Wilkinson*. *Joaquín Giner* have only performed some comestic changes.
+
 <br />
 
 ## Your Virtual Machine
