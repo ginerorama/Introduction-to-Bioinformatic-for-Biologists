@@ -226,7 +226,7 @@ Since all other directories or files are descended from root, the absolute path 
 
 ### mkdir (make directory)
 
-We will now make a subdirectory in your home directory to hold the files you will be creating and using in the course of this tutorial. To make a subdirectory called unixstuff in your current working directory type:
+We will now make a subdirectory in your home directory to hold the files you will be creating and using in the course of this tutorial. To make a subdirectory called bioinformatic_course in your current working directory type:
 
 `$ mkdir bioinformatic_course`
 
@@ -323,12 +323,12 @@ which means that **jgl** (your home directory) is in the directory **Users** (th
 ### absolute and relative paths
 
 
-The *Absolute path* always starts from the root directory (/). For example, 
+The ***Absolute path always starts from the root directory (/)***. For example, 
 
 > `/Users/jgl/bioinformatic_course/backups`
 
 
-A *relative path* starts from the current directory. For example, if you are in the **/User** directory and you want to access the my_scripts.sh file stored in backups, you can use jgl/bioinformatic_course/backups/my_scripts.sh.
+A ***relative path starts from the current directory***. For example, if you are in the **/User** directory and you want to access the my_scripts.sh file stored in backups, you can use jgl/bioinformatic_course/backups/my_scripts.sh.
 
 <br />
 
