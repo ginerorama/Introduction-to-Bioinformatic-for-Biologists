@@ -207,7 +207,7 @@ To list all files and directories in your home directory including those whose n
 
 ### Linux directory structure
 
-Linux is based on UNIX and hence it borrows its filesystem hierarchy from UNIX. You’ll fine a similar directory structure in UNIX-like operating systems such as Ubuntu and macOS. I’ll be using the term Linux hereafter instead of UNIX though.
+***Linux is based on UNIX and hence it borrows its filesystem hierarchy from UNIX***. You’ll fine a similar directory structure in UNIX-like operating systems such as Ubuntu and macOS. I’ll be using the term Linux hereafter instead of UNIX though.
 
 ### / – The root directory
 Everything, all the files and directories, in Linux are located under `root` represented by `/`. If you look at the directory structure, you’ll realize that it is similar to a plant’s root.
