@@ -264,10 +264,10 @@ command | function|
 `command >> file`| append standard output to a file|
 `command 2> error_file` |redirect standard error (2) to a file|
 `command < file` | redirect standard input from a file|
-`command1 | command2` | pipe the output of command1 to the input of command2|
+`command1 \| command2` | pipe the output of command1 to the input of command2|
 `command1 ; command2` | concatenate different commands in one line|
 `command1 && command2` |execute the command if the preceding one finished correctly|
-`command1 || command2` |execute the command if the preceding one didn’t finish correctly|
+`command1 \|\| command2` |execute the command if the preceding one didn’t finish correctly|
 `cat file1 file2 > file0`| concatenate file1 and file2 to file0
 `sort`| sort data
 
