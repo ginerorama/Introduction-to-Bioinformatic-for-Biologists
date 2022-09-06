@@ -360,7 +360,7 @@ If you only want to get the number of lines
 The character `*` is called a wildcard, and will match against one or more character(s) in a file (or directory) name. For example, in your **bioinformatic_course** directory, type
 
 ```
-$ touch list1 list2 list3 1list
+$ touch list1 list22 list33 1list
 ```
 This line will create three files named list1 list2 list3, we will see in next chapter what touch command exactly do. Now we will take advantage of `*` characters to find all list files, type
 
