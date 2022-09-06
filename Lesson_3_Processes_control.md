@@ -9,7 +9,7 @@ UNIX 3: process control
 Most processes initiated by UNIX commands write to the **standard output** (that is, they write to the terminal screen), and many take their input from the **standard input** (that is, they read it from the keyboard). There is also the **standard error**, where processes write their error messages, by default, to the terminal screen.
 
 
-![](stdin_3_1.png)
+![](/media/stdin_3_1.png)
 
 Under Linux there are three standard streams:
 
@@ -62,7 +62,7 @@ To read the contents of the file, type
     $ cat list1
     
     
-![](3_2.png)
+![](/media/3_2.png)
 
     
 
@@ -87,7 +87,7 @@ To read the contents of the file, type
 
     $ cat list1
 
-![](3_3.png)
+![](/media/3_3.png)
 
 You should now have two files. One contains six fruit, the other contains four fruit. We will now use the cat command to join (concatenate) **list1** and **list2** into a new file called **biglist**. Type
 
@@ -99,7 +99,7 @@ To read the contents of the new file, type
 
     $ cat biglist
     
-![](3_4.png)
+![](/media/3_4.png)
     
 
 ### Redirecting the error
@@ -159,7 +159,7 @@ To output the sorted list to a file, type,
 Use `cat` to read the contents of the file **slist**
 
 
-![](3_5.png)
+![](/media/3_5.png)
 
 3.4 Pipes
 ---------
@@ -182,7 +182,7 @@ For example, typing
     $ head -n 5 list1 | sort > list5sorted
     $ cat list5sorted
     
- ![](3_6.png)
+ ![](/media/3_6.png)
  
     
 
