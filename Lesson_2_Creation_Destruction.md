@@ -424,4 +424,5 @@ command | function|
 3. Print the header of the last fasta sequence
 4. How many Proteins sequences contain sequences.fasta ?.
 5. How many secuences contains the motif LLR
-6. Using nano modify the header of the first fasta sequence, remove all words after the tr|A0A060IHA6|A0A060IHA6_9RHIZ ID
+6. Try -B1 option to have a look the name of the sequences that contains the LLR motif. All the sequences contains the same number of motif?
+7. Using nano modify the header of the first fasta sequence, remove all words after the tr|A0A060IHA6|A0A060IHA6_9RHIZ ID
