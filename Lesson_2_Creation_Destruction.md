@@ -122,9 +122,11 @@ cat todo.txt
 
 We should note here that a `directory` is merely a special type of `file`. So the rules and conventions for naming files apply also to directories.
 
-In naming `files`, characters with special meanings such as `/` `*` `&` `%` , should be avoided. Also, a**void using spaces within names**. The safest way to name a file is to **use only alphanumeric characters**, that is, letters and numbers, together with `_` (underscore) and `.` (dot).
-
-File names conventionally start with a lower-case letter, and may end with a dot followed by a group of letters **indicating the contents of the file**. For example, all files consisting of Python code may be named with the ending `.py`, for example, `myprogram.py`. Then in order to list all files containing Python code in your home directory, you need only type ls `*.py` in that directory.
+1. characters with special meanings such as `/` `*` `&` `%` , should be avoided. 
+2. **avoid using spaces within names**. 
+3. **use only alphanumeric characters**, that is, letters and numbers, together with `_` (underscore) and `.` (dot).
+4. File names conventionally ***start with a lower-case letter***, 
+5. File names conventionally end with a (.) followed by a group of letters **indicating the contents of the file**. For example, all files consisting of Python code may be named with the ending `.py`, for example, `myprogram.py`. Then in order to list all files containing Python code in your home directory, you need only type ls `*.py` in that directory.
 
 
 
