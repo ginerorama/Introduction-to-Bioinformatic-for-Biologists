@@ -183,7 +183,7 @@ It can also be used to rename a file, by moving the file to the same directory, 
 
 We are now going to move the file science.bak to your backup directory.
 
-First, change directories to your unixstuff directory (can you remember how?). Then, inside the **unixstuff** directory, type
+First, change directories to your unixstuff directory (can you remember how?). Then, inside the **bioinformatic_course** directory, type
 
 ```BASH
 $ mv science.bak backups/.
