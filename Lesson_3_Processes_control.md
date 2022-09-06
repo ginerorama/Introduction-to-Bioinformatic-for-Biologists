@@ -9,7 +9,11 @@ UNIX 3: process control
 Most processes initiated by UNIX commands write to the **standard output** (that is, they write to the terminal screen), and many take their input from the **standard input** (that is, they read it from the keyboard). There is also the **standard error**, where processes write their error messages, by default, to the terminal screen.
 
 
-![](/media/stdin_3_1.png)
+<p align="center">
+<img src="/media/lesson_3/stdin_3_1.png" alt="drawing"/>
+</p>
+
+
 
 Under Linux there are three standard streams:
 
@@ -62,8 +66,11 @@ To read the contents of the file, type
     $ cat list1
     
     
-![](/media/3_2.png)
 
+
+<p align="center">
+<img src="/media/lesson_3/3_2.png" alt="drawing"/>
+</p>
     
 
 ### Exercise 3a
@@ -87,7 +94,13 @@ To read the contents of the file, type
 
     $ cat list1
 
-![](/media/3_3.png)
+
+<p align="center">
+<img src="/media/lesson_3/3_3.png" alt="drawing"/>
+</p>
+
+
+
 
 You should now have two files. One contains six fruit, the other contains four fruit. We will now use the cat command to join (concatenate) **list1** and **list2** into a new file called **biglist**. Type
 
@@ -99,7 +112,11 @@ To read the contents of the new file, type
 
     $ cat biglist
     
-![](/media/3_4.png)
+
+
+<p align="center">
+<img src="/media/lesson_3/3_4.png" alt="drawing"/>
+</p>
     
 
 ### Redirecting the error
@@ -159,7 +176,12 @@ To output the sorted list to a file, type,
 Use `cat` to read the contents of the file **slist**
 
 
-![](/media/3_5.png)
+
+<p align="center">
+<img src="/media/lesson_3/3_5.png" alt="drawing"/>
+</p>
+
+<br/>
 
 3.4 Pipes
 ---------
@@ -182,8 +204,11 @@ For example, typing
     $ head -n 5 list1 | sort > list5sorted
     $ cat list5sorted
     
- ![](/media/3_6.png)
- 
+
+
+<p align="center">
+<img src="/media/lesson_3/3_6.png" alt="drawing"/>
+</p>
     
 
 will give the same result as above, but quicker and cleaner.
