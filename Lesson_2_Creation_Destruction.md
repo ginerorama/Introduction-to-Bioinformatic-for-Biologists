@@ -9,7 +9,7 @@ Lesson 2: Creation, Destruction and Inspection
 There are a few different ways to create a new file on the command line. The most simple way to create a blank file is to use the `touch` command, followed by the path to the file you want to create. In this example we are going to create a new journal entry using touch:
 
 
-```
+```BASH
 touch journal-2017-01-24.txt
 ls
 ## journal-2017-01-24.txt
@@ -17,18 +17,18 @@ ls
 
 Another easy way to create a file is using **output redirection**. Output redirection stores text that would be normally printed to the command line in a text file. You can use output redirection by typing the greater-than sign` > `at the end of a command followed by the name of the new file that will contain the output from the proceeding command. Let's try an example using echo:
 
-```
+```BASH
 $ echo "I'm in the terminal."
 ## I'm in the terminal.
 ```
-`
+```BASH
 echo "I'm in the file." > echo-out.txt
-`
+```
 
 Only the first command printed output to the terminal. Let's see if the second command worked:
 
 
-```
+```BASH
 ls
 ## Desktop
 ## Documents
@@ -38,14 +38,14 @@ ls
 ## journal-2017-01-24.txt
 ## echo-out.txt
 ```
-```
+```BASH
 cat echo-out.txt
 ## I'm in the file.
 ```
 
 It worked! You can also append text to the end of a file using two greater-than signs `>>`. Let's try this feature out:
 
-```
+```BASH
 echo "I have been appended." >> echo-out.txt
 cat echo-out.txt
 ## I'm in the file.
@@ -54,7 +54,7 @@ cat echo-out.txt
 
 ***Now for a word of warning***. Imagine that you want to append another line to the end of echo-out.txt, so you type echo "A third line." > echo-out.txt into the terminal when really you meant to type echo "A third line." >> echo-out.txt. Let's see what happens:
 
-```
+```BASH
 echo "A third line." > echo-out.txt
 cat echo-out.txt
 ## A third line.
@@ -67,7 +67,10 @@ Unfortunately we have unintentionally overwritten what was already contained in 
 
 Finally we should discuss how to create and edit text files. There are several file editors that are available for your terminal including **vim** and **emacs**. Here the one text editor we will discuss using is called `nano`. It is a very simply text editor that use your entire terminal window. Let's create and edit *todo.txt* using `nano`:
 
-`nano todo.txt`
+```BASH
+nano todo.txt
+```
+<br />
 
 ```
 GNU nano 2.0.6                File: todo.txt
@@ -106,7 +109,7 @@ GNU nano 2.0.6                File: todo.txt
 
 Now let's quickly check if those changes were saved correctly:
 
-```
+```BASH
 cat todo.txt
 ## - email Jaime
 ## - write bioinformatic protocols
@@ -151,7 +154,7 @@ Then at the UNIX prompt, type,
 
 Be aware that there is one difference between copying files and folders, when copying folders you need to specify the `-r` option, which is short for recursive. This ensures that the underlying directory structure of the directory you wish to copy remains intact. Let's try copying **bioinformatic_course** directory into the **Document** directory:
 
-```
+```BASH
 cd ~
 cp -r bioinformatic_course  ~/Desktop/bioinformatic_course
 cd ~/Desktop/bioinformatic_course
@@ -180,7 +183,9 @@ We are now going to move the file science.bak to your backup directory.
 
 First, change directories to your unixstuff directory (can you remember how?). Then, inside the **unixstuff** directory, type
 
-    $ mv science.bak backups/.
+```BASH
+$ mv science.bak backups/.
+```
 
 Type `ls` and `ls backups` to see if it has worked.
 
@@ -194,7 +199,7 @@ To delete (remove) a file, use the `rm` command. As an example, we are going to 
 
 Inside your **bioinformatic_course** directory, type
 
-```
+```BASH
 $ cp science.txt tempfile.txt  
 $ ls (to check if it has created the file)  
 $ rm tempfile.txt  
@@ -215,7 +220,9 @@ Create a directory called **tempstuff** using mkdir, then remove it using the `r
 
 The command `cat` can be used to display the contents of a file on the screen. Type:
 
-    $ cat science.txt
+```BASH
+cat science.txt
+```
 
 As you can see, the file is longer than than the size of the window, so it scrolls past making it unreadable.
 
@@ -223,7 +230,10 @@ As you can see, the file is longer than than the size of the window, so it scrol
 
 The command `less` writes the contents of a file onto the screen a page at a time. Type
 
-    $ less science.txt
+
+```BASH
+less science.txt
+```
 
 Press the `[space-bar]` if you want to see another page, type `[q]` if you want to quit reading. As you can see, less is used in preference to cat for long files.
 
@@ -233,13 +243,17 @@ The `head` command writes the first ten lines of a file to the screen.
 
 First clear the screen then type
 
-    $ head science.txt
-
+```BASH       
+head science.txt
+```
 ![](2.5.png)
 
 Then type
 
-    $ head -5 science.txt
+```BASH
+head -5 science.txt
+```
+
 
 What difference did the -5 do to the head command?
 
@@ -249,8 +263,10 @@ The `tail` command writes the last ten lines of a file to the screen.
 
 Clear the screen and type
 
-    $ tail science.txt
-    
+```BASH
+tail science.txt
+```
+
 ![](2.6.png)
 
 How can you view the last 15 lines of the file?
@@ -262,8 +278,10 @@ How can you view the last 15 lines of the file?
 
 Using `less`, you can search though a text file for a keyword (pattern). For example, to search through **science.txt** for the word 'science', type
 
-    $ less science.txt
-
+```BASH
+less science.txt
+```
+  
 then, still in less (i.e. don't press \[q\] to quit), type a forward slash `[/]` followed by the word to search
 
 `/science`
@@ -400,4 +418,10 @@ command | function|
 1. Find out how many characters and lines are in `list.txt` without opening the file or printing it to the command line.
 1. Print the first and the last line of `list.txt` in the command line.
 
-
+### Excercise II
+1. Download the file sequences.fasta present in the resources folder of this repository
+2. Print the header of the first fasta sequence
+3. Print the header of the last fasta sequence
+4. How many Proteins sequences contain sequences.fasta ?.
+5. How many secuences contains the motif LLR
+6. Using nano modify the header of the first fasta sequence, remove all words after the tr|A0A060IHA6|A0A060IHA6_9RHIZ ID
