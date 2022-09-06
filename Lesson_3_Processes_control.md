@@ -129,9 +129,10 @@ export channel 2 to a ‘error.txt’ file.
  
  
 Sometimes we are no interested in the error message from channel 2 at all and directly we sending the message to 'bit-heaven' instead of save it in a file
- 
-   $ lsp 2>/dev/null
- 
+
+
+`lsp 2> /dev/null`
+
 
 3.3 Redirecting the Input  
 ---------------------------
