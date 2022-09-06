@@ -141,7 +141,7 @@ We should note here that a `directory` is merely a special type of `file`. So th
 
 What we are going to do now, is to take a file stored in an open access area of the file system, and use the cp command to copy it to your **bioinformatic_course** directory.
 
-First, cd to your **bioinformatic_course** directory.
+First, `cd to your **bioinformatic_course** directory.
 
     $ cd ~/bioinformatic_course
 
@@ -212,7 +212,8 @@ You can use the `rmdir` command to remove an empty directory (make sure it is em
 
 ### Exercise 2b
 
-Create a directory called **tempstuff** using mkdir, then remove it using the `rmdir` command.
+1. Create a directory called **tempstuff** using mkdir, then remove it using the `rmdir` command.
+2. Remove the bioinformatic_course folder that we copied at the Desktop 
 
 2.5 Displaying the contents of a file on the screen
 ---------------------------------------------------
@@ -356,7 +357,7 @@ If you only want to get the number of lines
 
 ### The characters `*` and `?`
 
-The character `*` is called a wildcard, and will match against none or more character(s) in a file (or directory) name. For example, in your **bioinformatic_course** directory, type
+The character `*` is called a wildcard, and will match against one or more character(s) in a file (or directory) name. For example, in your **bioinformatic_course** directory, type
 
 ```
 $ touch list1 list2 list3 1list
