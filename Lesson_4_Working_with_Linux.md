@@ -83,12 +83,11 @@ ls geneA*
 ```
 
 Only the files starting with "geneA" are listed! The command `ls geneA*` literally
-means: list the files that start with "geneA" followed by zero or more of any
-character. As you can imagine using wildcards is a powerful tool for working 
+means: ***list the files that start with "geneA" followed by zero or more of any
+character***. As you can imagine using wildcards is a powerful tool for working 
 with groups of files that are similarly named.
 
-Let's walk through a few other examples of using the star wildcard. We could
-only list the sequences files starting with "geneB":
+We could only list the sequences files starting with "geneB":
 
 
 ```bash
