@@ -190,7 +190,7 @@ Use `cat` to read the contents of the file **slist**
 We are able to retrieve the input from a file and redirect the output to another file. Sometimes we just want to redirect the output from one command directly to the input of another without creating a temporary file(s). Then we can use the pipe `|`
 
 
-Imagine you want the 5 first fruits presented in list1 sorted, and stored in a file named list5sorted 
+Imagine you want the 5 first fruits presented in ***list1*** sorted, and stored in a file named ***list5sorted*** 
 
 
 One method to get a sorted list of the first 5 fruits is to type,
@@ -198,7 +198,7 @@ One method to get a sorted list of the first 5 fruits is to type,
     $ head -n 5 list1 > list5  
     $ sort list5 > list5sorted
 
-This is a bit slow and you have to remember to remove the temporary file called names when you have finished. What you really want to do is connect the output of the who command directly to the input of the sort command. This is exactly what pipes do. The symbol for a pipe is the vertical bar `|`
+This is a bit slow and you have to remember to remove the temporary file called names when you have finished. What you really want to do is connect the output of the `head` command directly to the input of the `sort` command. This is exactly what pipes do. The symbol for a pipe is the vertical bar `|`
 
 For example, typing
 
@@ -252,6 +252,11 @@ Here, just in one line and using the command `wget` you will download the file *
 
         $ ls -X 2>/dev/null || cat list1
 
+
+
+Excercise
+---------
+Make a small program using `||` able to indicate in the standard ouput (by printing in the terminal "everything was fine") if the first command works properly or not
 
 
 
