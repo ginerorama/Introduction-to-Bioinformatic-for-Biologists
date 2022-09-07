@@ -357,7 +357,7 @@ If you only want to get the number of lines
 
 ### The characters `*` and `?`
 
-The character `*` is called a wildcard, and will match against one or more character(s) in a file (or directory) name. For example, in your **bioinformatic_course** directory, type
+The character `*` is called a wildcard, and will match against none or more character(s) in a file (or directory) name. For example, in your **bioinformatic_course** directory, type
 
 ```
 $ touch list1 list22 list33 1list
