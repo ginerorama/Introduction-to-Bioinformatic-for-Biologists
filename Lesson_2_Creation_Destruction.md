@@ -295,7 +295,11 @@ As you can see, less finds and highlights the keyword. Type `[n]` to search for 
 
 grep is one of many standard UNIX utilities. It searches files for specified words or patterns. First clear the screen, then type
 
-    $ grep science science.txt
+
+```BASH
+$ grep science science.txt
+```
+
 
 ![](2.2.png)
 
