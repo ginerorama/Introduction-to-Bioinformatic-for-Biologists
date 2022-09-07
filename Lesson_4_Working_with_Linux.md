@@ -214,7 +214,7 @@ ls
 ## geneF_01.fn
 ```
 
-Finally my sequences have started to be somewhat organized! Let's list the files in one of this directory
+Finally my sequences have started to be somewhat organized! Let's list the files in one of these directories
 just to make sure all was moved as planned:
 
 
@@ -276,8 +276,8 @@ Another important wildcard is ```{ }``` (curly brackets). In this case you can s
 
 
 ```
-echo gene_{1,2,3,4,5}
-gene_1 gene_2 gene_3 gene_4 gene_5
+echo gene_{A1,A2,A3,A4,A5}
+gene_A1 gene_A2 gene_A3 gene_A4 gene_A5
 ```
 You can combine the list emcapsuled in ```{}``` wildcard adding characters at both the bigining and the end of the ```{}```, let's see:  
 
@@ -292,7 +292,7 @@ gene_1.fa gene_2.fa gene_3.fa gene_4.fa gene_5.fa
 ### Summary
 
 - Wildcards can represent many kinds and numbers of characters.
-- - You can use wildcards on the command line in order to work with multiple files and folders.
+- You can use wildcards on the command line in order to work with multiple files and folders.
 
 | Wildcard	   |               Meaning                |
 |--------------:|:-------------------------------------|
@@ -307,11 +307,13 @@ gene_1.fa gene_2.fa gene_3.fa gene_4.fa gene_5.fa
 
 1. Before I organized the sequences by gene, what command would have listed all of the sequences of type `.fn`?
 2. Before I organized the sequences by gene, what command would have deleted all of sequences belong to geneC?
- 
+3. If I want to get information about \_02 version genes how can I do that? 
 
+<br /> 
+<br /> 
 
-## 5.2 Searching (Regular Expression)
-
+5.2 Searching (Regular Expression)
+----
 
 ### Regular Expressions
 
