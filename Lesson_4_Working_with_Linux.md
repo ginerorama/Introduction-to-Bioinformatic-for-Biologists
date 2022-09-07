@@ -6,6 +6,17 @@ UNIX 4: Working with UNIX
 
 `Wildcards` are useful in many ways for a GNU/Linux system and for various other uses. Commands can use wildcards to *perform actions on more than one file at a time*, or *to find part of a phrase in a text file*.
 
+<br />
+
+First of all we have to download the script `generate_sequences.sh` stored in **resources/** folder in this repository. Save the script in the bioinformatic_course folder. To run the script type:
+
+```BASH
+bash generate_sequences.sh
+```
+
+This script will generate some genes files in a new directory named **sequences**
+
+<br />
 
 Let's go into my `sequences` folder in my home directory and take a look around:
 
@@ -34,7 +45,7 @@ ls
 
 ```bash
 cd bioinformatic_course
-cd gene_sequencing
+cd sequences
 ls
 ```
 
@@ -55,7 +66,7 @@ ls
 ## geneF_01.fn
 ```
 
-I've just been storing my las gene cloning sequenced into this folder without organizing.
+In sequences folder Im currently save last genes I have sequenced without any organization.
 Instead of using `mv` to move around each
 individual sequence I can select groups of genes using the `*` wildcard. A 
 **wildcard** is a character that represents other characters, much like how
@@ -65,8 +76,8 @@ this Lesson.
 
 ### The ```*```
 
-The `*` ("star") **wildcard** represents *zero or more of any
-character*, and it can be used to match names of files and folders in the 
+The `*` ("star") **wildcard** represents ***zero or more of any
+character***, and it can be used to match names of files and folders in the 
 command line. For example if I wanted to list all of the files in my sequences 
 directory which have a name that starts with "geneA" I could do the following:
 
@@ -233,7 +244,7 @@ Looks good! There are a few more wildcard, let's see
 ### The ```?```
 
 
-```?```(question mark) wildcard represent *any single character*. If you specified something like ```geneA_0?.fa``` you will return all the geneA files with .fa extension:
+```?```(question mark) wildcard represent ***any single character***. If you specified something like ```geneA_0?.fa``` you will return all the geneA files with .fa extension:
 
 ```
 ls geneA_0?.fa
@@ -248,7 +259,7 @@ ls geneA_0?.fa
 
 ### The ```[ ]```
 
-```[]``` Specifies a range. If you did geneA_intron_[1,2,3].fasta it can become: geneA_intron_1.fasta, geneA_intron_2.fasta and  geneA_intron_3.fasta ,  it can become anything that starts with 'geneA_intron_' and ends with '_.fasta_'. This kind of wildcard specifies an “or” relationship (you only need one to match) For example, these would work:
+```[]``` **Specifies a range**. If you did geneA_intron_[1,2,3].fasta it can become: geneA_intron_1.fasta, geneA_intron_2.fasta and  geneA_intron_3.fasta ,  it can become anything that starts with 'geneA_intron_' and ends with '_.fasta_'. This kind of wildcard specifies an “or” relationship (you only need one to match) For example, these would work:
 
 
 ```
