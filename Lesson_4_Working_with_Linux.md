@@ -69,7 +69,7 @@ ls
 In sequences folder Im currently save last genes I have sequenced without any organization.
 Instead of using `mv` to move around each
 individual sequence I can select groups of genes using the `*` wildcard. A 
-**wildcard** is a character that represents other characters, much like how
+**wildcard is a character that represents other characters**, much like how
 joker in a deck of cards can represent other cards in the deck. Wildcards are
 a subset of **metacharacters**, a topic which we will discuss in detail later on in
 this Lesson. 
@@ -319,9 +319,8 @@ gene_1.fa gene_2.fa gene_3.fa gene_4.fa gene_5.fa
 
 The ability to search through files and folders can greatly improve your
 productivity using Unix. First we'll cover searching through text files.
-I recently downloaded a list of the names of the states in the US which you
-can find [here](http://seankross.com/notes/states.txt). Let's take a look at 
-this file:
+We are going to work with a list of the names of the states in the US which you
+can find at resource folder [here](https://github.com/ginerorama/Introduction-to-Bioinformatic-for-Biologists/tree/main/Resources)). Let's take a look at this file:
 
 
 ```bash
@@ -346,7 +345,7 @@ wc states.txt
 ```
 
 It makes sense that there are 50 lines, but it's interesting that there are 60
-total words. Let's a take a peak at the beginning of the file:
+total words. Let's a take a look at the beginning of the file:
 
 
 ```bash
@@ -366,14 +365,11 @@ head states.txt
 ## Georgia
 ```
 
-This file looks basically how you would expect it to look! You may recall from
-Chapter 3 that the kind of shell that we're using is the bash shell. Bash
-treats different kinds of data differently, and we'll dive deeper into data
-types in Chapter 5. For now all you need to know is that text data are
-called **strings**. A string could be a word, a sentence, a book, or a file or 
-folder name. One of the most effective ways to search through strings is to use
-**regular expressions**. Regular expressions are strings that define patterns
-in other strings. You can use regular expressions to search for a sub-string
+This file looks basically how you would expect it to look! For now all you need to know is that text data are
+called **strings**. **A string could be a word, a sentence, a book, or a file or 
+folder name**. One of the most effective ways to search through strings is to use
+**regular expressions**. ***Regular expressions are strings that define patterns
+in other strings***. You can use regular expressions to search for a sub-string
 contained within a larger string, or to replace one part of a string with
 another string.
 
@@ -422,9 +418,9 @@ grep "New" states.txt
 ```
 
 In the previous case the regular expression we used was simply `"New"`, which
-represents an occurrence of the string "New". Regular expressions are not
+represents an occurrence of the string "New". **Regular expressions are not
 limited to just being individual characters or words, they can also represent
-parts of words. For example I could search all of the state names that contain
+parts of words**. For example I could search all of the state names that contain
 the string "nia" with the following command:
 
 
@@ -445,13 +441,13 @@ All of the state names above happen to end with the string "nia".
 
 Regular expressions aren't just limited to searching with characters and
 strings, the real power of regular expressions come from using
-**metacharacters**. Remember that metacharacters are characters that can be used
-to represent other characters. To take full advantage of all of the metacharacters
+**metacharacters**. Remember that ***metacharacters are characters that can be used
+to represent other characters***. To take full advantage of all of the metacharacters
 we should use `grep`'s cousin `egrep`, which just extends `grep`'s capabilities.
 If you're using Ubuntu you should use `grep -P` instead of `egrep` for results
 that are consistent with this chapter.
 The first metacharacter we should discuss is the `"."` (period) metacharacter, 
-which represents *any* character. If for example I wanted to search `states.txt` 
+which ***represents *any* character***. If for example I wanted to search `states.txt` 
 for the character "i", followed by any character, followed by the character "g" 
 I could do so with the following command:
 
@@ -475,11 +471,19 @@ for example the command `egrep "." states.txt` would return every line of
 states.txt since the regular expression `"."` would match one occurrence of any
 character on every line (there's at least one character on every line). 
 
-Besides characters that can represent other
-characters, there are also metacharacters called **quantifiers** which allow you
+<br />
+
+### quantifiers
+
+`quantifiers` are metacharacters which **allow you
 to specify the number of times a particular regular expression should appear in 
-a string. One of the most basic quantifiers is `"+"` (plus) which represents one 
-or more occurrences of the proceeding expression. For example the regular 
+a string**. 
+
+
+`+`
+
+For example, `"+"` (plus) which represents **one 
+or more occurrences of the proceeding expression**. For example the regular 
 expression "s+as" means: one or more "s" followed by "as". Let's see if any of 
 the state names match this expression:
 
@@ -492,10 +496,16 @@ egrep "s+as" states.txt
 ## Arkansas
 ## Kansas
 ```
+Both Arkan*sas* and Kan*sas* match the regular expression `"s+as"`. 
 
-Both Arkan*sas* and Kan*sas* match the regular expression `"s+as"`. Besides the
-plus metacharacter there's also the `"*"` (star) metacharacter which represents
-zero or more occurrences of the preceding expression. Let's see what happens if
+<br />
+
+`*`
+
+
+Besides the
+plus metacharacter there's also the `"*"` (star) metacharacter which **represents
+zero or more occurrences of the preceding expression**. Let's see what happens if
 we change `"s+as"` to `"s*as"`:
 
 
@@ -514,10 +524,16 @@ egrep "s*as" states.txt
 ```
 
 As you can see the star metacharacter is much more liberal with respect to
-matching since many more state names are matched by `"s*as"`. There are more
+matching since many more state names are matched by `"s*as"`.
+
+<br />
+
+`{}`
+
+There are more
 specific quantifies you can use beyond "zero or more" or "one or more"
-occurrences of an expression. You can use curly brackets (`{ }`) to specify an
-exact number of occurrences of an expression. For example the regular expression
+occurrences of an expression. You can use curly brackets (`{ }`) **to specify an
+exact number of occurrences of an expression**. For example the regular expression
 `"s{2}"` specifies exactly two occurrences of the character "s". Let's try using
 this regular expression:
 
@@ -553,9 +569,12 @@ egrep "s{2,3}" states.txt
 Of course the results are the same because there aren't any states that have "s"
 repeated three times.
 
+
+`()` 
+
 You can use a **capturing group** in order to search for multiple occurrences of
-a string. You can create capturing groups within regular expressions by using
-parentheses (`"( )"`). For example if I wanted to search states.txt for the
+a string. **You can create capturing groups within regular expressions by using
+parentheses (`"( )"`)**. For example if I wanted to search states.txt for the
 string "iss" occurring twice in a state name I could use a capturing group and
 a quantifier like so:
 
