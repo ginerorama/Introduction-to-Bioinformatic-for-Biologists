@@ -254,10 +254,6 @@ Here, just in one line and using the command `wget` you will download the file *
 
 
 
-Excercise
----------
-Make a small program using `||` able to indicate in the standard ouput (by printing in the terminal "everything was fine") if the first command works properly or not
-
 
 
 Summary
@@ -276,4 +272,11 @@ command | function|
 `command1 \|\| command2` |execute the command if the preceding one didn’t finish correctly|
 `cat file1 file2 > file0`| concatenate file1 and file2 to file0
 `sort`| sort data
+
+
+
+Excercises
+
+1. Sort ***biglist*** using multiple commands in one line. You can generate a ***permanent temp file***. the sorted list have to be stored again in biglist file.
+2. Make a small program using `||` able to indicate in the standard ouput (by printing in the terminal "everything was fine") if the first command works properly or not.
 
