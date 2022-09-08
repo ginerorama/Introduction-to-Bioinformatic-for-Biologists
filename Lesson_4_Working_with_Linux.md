@@ -4,7 +4,7 @@ UNIX 4: Working with UNIX
 
 ## 5.1 Get Wild
 
-`Wildcards` are useful in many ways for a GNU/Linux system and for various other uses. Commands can use wildcards to *perform actions on more than one file at a time*, or *to find part of a phrase in a text file*.
+`Wildcards` are useful in many ways for a GNU/Linux system and for various other uses. Commands can use wildcards to **perform actions on more than one file at a time**, or **to find part of a phrase in a text file**.
 
 <br />
 
@@ -317,6 +317,7 @@ gene_1.fa gene_2.fa gene_3.fa gene_4.fa gene_5.fa
 
 ### Regular Expressions
 
+**A regular expression (shortened as regex) is a sequence of characters that specifies a search pattern in text.**
 The ability to search through files and folders can greatly improve your
 productivity using Unix. First we'll cover searching through text files.
 We are going to work with a list of the names of the states in the US which you
@@ -437,6 +438,8 @@ grep "nia" states.txt
 
 All of the state names above happen to end with the string "nia".
 
+<br />
+
 ### Metacharacters
 
 Regular expressions aren't just limited to searching with characters and
@@ -444,8 +447,11 @@ strings, the real power of regular expressions come from using
 **metacharacters**. Remember that ***metacharacters are characters that can be used
 to represent other characters***. To take full advantage of all of the metacharacters
 we should use `grep`'s cousin `egrep`, which just extends `grep`'s capabilities.
-If you're using Ubuntu you should use `grep -P` instead of `egrep` for results
-that are consistent with this chapter.
+
+<br />
+
+`" . "`
+
 The first metacharacter we should discuss is the `"."` (period) metacharacter, 
 which ***represents *any* character***. If for example I wanted to search `states.txt` 
 for the character "i", followed by any character, followed by the character "g" 
@@ -480,7 +486,7 @@ to specify the number of times a particular regular expression should appear in
 a string**. 
 
 
-`+`
+`" + "`
 
 For example, `"+"` (plus) which represents **one 
 or more occurrences of the proceeding expression**. For example the regular 
@@ -500,7 +506,7 @@ Both Arkan*sas* and Kan*sas* match the regular expression `"s+as"`.
 
 <br />
 
-`*`
+`" * "`
 
 
 Besides the
@@ -528,7 +534,7 @@ matching since many more state names are matched by `"s*as"`.
 
 <br />
 
-`{}`
+`" {} "`
 
 There are more
 specific quantifies you can use beyond "zero or more" or "one or more"
@@ -570,7 +576,7 @@ Of course the results are the same because there aren't any states that have "s"
 repeated three times.
 
 
-`()` 
+`" () "` 
 
 You can use a **capturing group** in order to search for multiple occurrences of
 a string. **You can create capturing groups within regular expressions by using
