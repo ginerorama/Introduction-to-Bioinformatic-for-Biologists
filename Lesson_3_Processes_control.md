@@ -232,14 +232,14 @@ When using the command line, you can run multiple commands in one line. The comm
 
 Here, just in one line and using the command `wget` you will download the file *e5.taxid_info.tsv* that contains all the taxa presented in Eggnog5 database and find all the entries that belong to genus Streptococcus. 
 
-### Other command separators
+### Other command separators (booleans)
 
-* `&&` only execute the command if the preceding one finished correctly
+* `&&` only execute the command if the preceding one finished correctly. Its the same than "AND"
 
         $ cat e5.taxid_info.tsv | sort > temp && mv temp e5.taxid_info.tsv
 
 
-* `||` only execute the command if the preceding one didn’t finish correctly (= plan B)
+* `||` only execute the command if the preceding one didn’t finish correctly (= plan B). Its the same than "OR"
 
         $ ls -h || cat list1
 
