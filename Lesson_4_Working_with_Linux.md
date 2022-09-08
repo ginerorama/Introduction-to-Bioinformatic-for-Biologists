@@ -160,7 +160,7 @@ mkdir geneE
 mkdir geneF
 ```
 
-Now we can move the photos using wildcards:
+Now we can move the genes using wildcards:
 
 
 ```bash
@@ -678,8 +678,8 @@ egrep "\s" small.txt
 ## tragedy + time = humor
 ```
 
-As you can see in the example above, the `\w` metacharacter matches all letters,
-numbers, and even the underscore character (`_`). We can see the complement of
+As you can see in the example above, the **`\w` metacharacter matches all letters,
+numbers, and even the underscore character (`_`)**. We can see the complement of
 this grep by adding the `-v` flag to the command:
 
 
@@ -738,15 +738,16 @@ egrep "[^aeiou]" small.txt
 ```
 
 Every line in the file is printed, because every line contains at least one
-non-vowel! If you want to specify a range of characters you can use a hyphen
-(`-`) inside of the square brackets. For example the regular expression `[e-q]`
+non-vowel! 
+**If you want to specify a range of characters you can use a hyphen
+(`-`) inside of the square brackets**. For example the regular expression `[e-q]`
 matches all of the lowercase letters between "e" and "q" in the alphabet
 inclusively. Case matters when you're specifying character sets, so if you
 wanted to only match uppercase characters you'd need to use `[E-Q]`. To ignore
 the case of your match you could combine the character sets with the `[e-qE-Q]`
-regex (short for regular expression), or you could use the `-i` flag with `grep`
-to **i**gnore the case. Note that the `-i` flag will work for any provided regular
-expression, not just character sets. Let's take a look at some examples using
+regex (short for regular expression)
+
+Let's take a look at some examples using
 the regular expressions that we just described:
 
 
@@ -813,9 +814,9 @@ egrep "\." small.txt
 
 There are three more metacharacters that we should discuss, and two of them come
 as a pair: the caret (`^`), which represents the start of a line, and the dollar
-sign (`$`) which represents the end of line. These "anchor characters" only
+sign (`$`) which represents the end of line. **These "anchor characters" only
 match the beginning and ends of lines when coupled with other regular
-expressions. For example, going back to looking at states.txt, I could search
+expressions**. For example, going back to looking at states.txt, I could search
 for all of the state names that begin with "M" with the following command:
 
 
@@ -851,9 +852,9 @@ egrep "s$" states.txt
 
 
 
-Finally, let's talk about the "or" metacharacter (`|`), which is also called the
-"pipe" character. This metacharacter allows you to match either the regex on 
-the right or on the left side of the pipe. Let's take a look at a small example:
+Finally, let's talk about the **"or" metacharacter (`|`)**, which is also called the
+"pipe" character. This metacharacter **allows you to match either the regex on 
+the right or on the left side of the pipe**. Let's take a look at a small example:
 
 
 ```bash
