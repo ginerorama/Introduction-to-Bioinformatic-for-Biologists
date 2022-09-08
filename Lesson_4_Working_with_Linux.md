@@ -629,9 +629,17 @@ echo "#%&-=***=-&%#" >> small.txt
 ```
 
 In addition to quantifiers there are also regular expressions for describing
-sets of characters. The `\w` metacharacter corresponds to all "word" characters,
-the `\d` metacharacter corresponds to all "number" characters, and the `\s`
-metacharacter corresponds to all "space" characters. Let's take a look at using
+sets of characters: 
+
+<br />
+
+1. `\w` metacharacter corresponds to all "word" characters
+1. `\d` metacharacter corresponds to all "number" characters
+1. `\s`metacharacter corresponds to all "space" characters
+
+<br />
+
+Let's take a look at using
 each of these metacharacters on small.txt:
 
 
@@ -684,25 +692,8 @@ egrep -v "\w" small.txt
 ```
 
 The `-v` flag (which stands for in**v**ert match) makes `grep` return all of the
-lines not matched by the regular expression. Note that the character sets for 
-regular expressions also have their inverse sets: `\W` for non-words, `\D` for
-non-digits, and `\S` for non-spaces. Let's take a look at using `\W`:
+lines not matched by the regular expression.
 
-
-```bash
-egrep "\W" small.txt
-```
-
-```
-## aa bb cc
-## tragedy + time = humor
-## http://www.jhsph.edu/
-## #%&-=***=-&%#
-```
-
-The returned strings all contain non-word characters. Note the difference between
-the results of using the invert flag `-v` versus using an inverse set regular
-expression.
 
 In addition to general character sets we can also create specific character
 sets using square brackets (`[ ]`) and then including the characters we wish to
@@ -950,11 +941,8 @@ a table with several of the metacharacters we've discussed in this chapter:
 |--------------:|:-------------------------------------|
 |       .       |            Any Character             |
 |      \\w      |                A Word                |
-|      \\W      |              Not a Word              |
 |      \\d      |               A Digit                |
-|      \\D      |             Not a Digit              |
 |      \\s      |              Whitespace              |
-|      \\S      |            Not Whitespace            |
 |     [def]     |         A Set of Characters          |
 |    [^def]     |           Negation of Set            |
 |     [e-q]     |        A Range of Characters         |
