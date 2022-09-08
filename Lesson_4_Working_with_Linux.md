@@ -858,11 +858,7 @@ egrep "s$" states.txt
 ## Texas
 ```
 
-There's a mnemonic that I love for remembering which metacharacter to use for
-each anchor: "First you get the **power**, then you get the **money**." The
-caret character is used for exponentiation in many programming languages, so
-"power" (`^`) is used for the beginning of a line and "money" (`$`) is used for
-the end of a line.
+
 
 Finally, let's talk about the "or" metacharacter (`|`), which is also called the
 "pipe" character. This metacharacter allows you to match either the regex on 
