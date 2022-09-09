@@ -1,7 +1,7 @@
 UNIX Lesson 6: Text manipulating commands
 ===================
 
-<img src="6.2.png" alt="drawing" width="150"/>
+<img src="/media/lesson_5/6.2.png" alt="drawing" width="150"/>
 
 In the Linux and Unix operating systems, everything is treated as a file. Whenever possible, those files are stored as human- and machine-readable text files. As a result, Linux contains a set of commands that are specialized for working with texts. Here we will explore most used text-manipulating commands in Linux.
 
@@ -21,7 +21,7 @@ In the Linux and Unix operating systems, everything is treated as a file. Whenev
 sed OPTION [SCRIPT/PATTERN MATCHING] [INPUTFILE]
 ```
 
-<img src="6.1.png" alt="drawing" width="400"/>
+<img src="/media/lesson_5/6.1.png" alt="drawing" width="400"/>
 
 <em>**Figure1**. cat search syntax</em>
 
@@ -341,16 +341,48 @@ fasta2.fa:2:atgcgcgcayacygaycacactagatcgatc
 fasta2.fa:6:atgctagaatagctcgcgcctagagatagctcgatac
 ```
 
+
+### 2.5 Display only the matches
+
+Append the `-o` operator to any grep command to show only the strings that matches your RE.
+
+```
+$ grep -o at fasta.fa
+```
+```
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+at
+```
+
+
+
 # cut
 
-The `cut` command in UNIX is a command for cutting out the sections from each line of files and writing the result to standard output. It can be used to cut parts of a line by byte position, character and field. Basically the cut command slices a line and extracts the text.
+The `cut` command in UNIX is a command for **cutting out the sections from each line of files and writing the result to standard output**. It can be used to cut parts of a line by byte position, character and field. Basically the cut command slices a line and extracts the text.
 
 
 ```
 cut OPTIONS [FILE]
 ```
 
-In this course we are going to see how to use cut only to select by field -f option. ```cut```use tab as a default field delimiter but can also work with other delimiter by using -d option. Important: space is not considered as delimiter in UNIX.
+In this course we are going to see how to use cut only to select by field `-f` option. ```cut```use tab as a default field delimiter but can also work with other delimiter by using `-d` option. Important: space is not considered as delimiter in UNIX.
 
 Syntax:
 
@@ -526,7 +558,7 @@ To sort and remove duplicates pass the -u option to sort. This will write a sort
 This option is helpful as the duplicates being removed give us a redundant file
 
 ```
-cat Mus_musculus.GRCm38.75_chr1.bed | sort -nk2 | head
+cat Mus_musculus.GRCm38.75_chr1.bed | sort -unk2 | head
 ```
 ```
 1 3054233 3054733
