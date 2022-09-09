@@ -1,4 +1,4 @@
-UNIX Lesson 6: Text manipulating commands
+UNIX Lesson 5: Text manipulating commands
 ===================
 
 <img src="/media/lesson_5/6.2.png" alt="drawing" width="150"/>
