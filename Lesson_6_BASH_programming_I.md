@@ -318,6 +318,7 @@ echo "I went to school in $the_empire_state."
 ## I went to school in New York.
 ```
 <br />
+
 ## Scritp arguments
 
 
@@ -644,16 +645,17 @@ By combining AND and OR operators you can precisely control the conditions for
 when certain commands should be executed.
 
 <br />
+
 ### Conditional Expressions
 
 Enabling your Bash script to make decisions is extremely useful. Conditional
 execution allows you to control the circumstances where certain programs are
 executed based on whether those programs succeed or fail, but you can also
-construct **conditional expressions** which are logical statements that are
+construct **conditional expressions which are logical statements that are
 either equivalent to `true` or `false`. Conditional expressions either compare
 two values, or they ask a question about one value. Conditional expressions are
-always between double brackets (`[[ ]]`), and they either use **logical flags**
-or **logical operators**. For example, there are several logical flags you could
+always between double brackets (`[[ ]]`), and they either use logical flags
+or logical operators**. For example, there are several logical flags you could
 use for comparing two integers. If we wanted to see if one integer was greater
 than another we could use `-gt`, the **g**reater **t**han flag. Enter this
 simple conditional expression into the command line:
@@ -782,8 +784,8 @@ equivalent to `false`. Let's test this operator a couple different ways:
 
 ```bash
 [[ rhythms =~ [aeiou] ]] && echo t || echo f
-my_name=sean
-[[ $my_name =~ ^s.+n$ ]] && echo t || echo f
+my_name=joaquin
+[[ $my_name =~ ^j.+n$ ]] && echo t || echo f
 ```
 
 ```
