@@ -894,8 +894,8 @@ bash simpleif.sh 4
 
 It worked! Since the first argument to this script was `4`, and 4 is equal to 4,
 the code within the `IF` statement was executed. You can pair `IF` statements with
-`ELSE` statements. An `ELSE` statement only runs if the conditional expression being
-evaluated by the IF statement is false. Let's create a simple program that uses
+`ELSE` statements. **An `ELSE` statement only runs if the conditional expression being
+evaluated by the IF statement is false**. Let's create a simple program that uses
 an `ELSE` statement:
 
 ```
