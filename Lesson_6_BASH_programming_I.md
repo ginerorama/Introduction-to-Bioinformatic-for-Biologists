@@ -72,7 +72,7 @@ into your text editor:
 
 expr 5 + 2
 expr 5 - 2
-expr 5 * 2
+expr 5 \* 2
 expr 5 / 2
 ```
 
