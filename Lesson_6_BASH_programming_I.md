@@ -257,7 +257,7 @@ You can modify the value of a variable using arithmetic operators by using the
 
 
 ```bash
-expr number=$chapter_number+1
+let number=$number+1
 echo $number
 ```
 
