@@ -906,7 +906,7 @@ Using the file *forest_coverage_percent.csv* stored at Resources folder obtein n
 2. country column sorted alphabetically 
 3. Number of years analyzed
 4. Obtein all the forest coverage data for Germany
-5. which coverage percent was obteined by Belgium in 1999?
+5. which coverage percent was obteined by Germany in 1999?
 6. Which country has the highest coverage percent in 1998 and in the year 2000?
 
 
