@@ -50,6 +50,7 @@ use of plot()
     plot(myData)
 
 ![](media/R/unnamed-chunk-2-1.png)
+
 If you want to see the points by category (who belongs to setosa,
 versicolor or virginica), we can use:
 
